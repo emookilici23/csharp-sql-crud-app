@@ -1,2 +1,1 @@
-# csharp-sql-crud-app
-C# ve SQL Tabanlı Crud proje
+# Kullanıcı Girişli SQL Tabanlı Crud
