@@ -20,6 +20,7 @@ namespace Kullanıcı_Girişli_SQL_Tabanlı_Crud
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            
             textBox2.PasswordChar = '*';
         }
         SqlConnection bağ = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\Database1.mdf;Integrated Security=True");
