@@ -40,7 +40,7 @@ namespace Kullanıcı_Girişli_SQL_Tabanlı_Crud
             }
           else
             {
-                MessageBox.Show("Kullanıcı adı veya şiren hatalı lütfen tekrar dene"+MessageBoxIcon.Error);
+                MessageBox.Show("Kullanıcı adı veya şiren hatalı lütfen tekrar dene","Hata",MessageBoxButtons.OK,MessageBoxIcon.Error);
                 bağ.Close();
             }
         
