@@ -67,11 +67,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(113, 193);
+            this.label3.Location = new System.Drawing.Point(120, 190);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 16);
+            this.label3.Size = new System.Drawing.Size(43, 16);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Soyad :";
+            this.label3.Text = "Şifre : ";
             // 
             // button1
             // 
@@ -81,6 +81,7 @@
             this.button1.TabIndex = 3;
             this.button1.Text = "Kişi Ekle";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 

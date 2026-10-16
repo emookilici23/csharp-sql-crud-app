@@ -63,5 +63,19 @@ namespace Kullanıcı_Girişli_SQL_Tabanlı_Crud
             
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            bağ.Open();
+            SqlCommand kom = new SqlCommand("INSERT INTO [GİRİŞ] (Id,kad,sifre) VALUES (@p3,@p1,@p2)",bağ);
+            kom.Parameters.AddWithValue("@p1", textBox2.Text);
+            kom.Parameters.AddWithValue("@p2", textBox3.Text);
+            kom.Parameters.AddWithValue("@p3",textBox1.Text);
+            kom.ExecuteNonQuery();
+             bağ.Close();
+            MessageBox.Show("Kullanıcı başarıyla eklendi", "Kullanıcı Eklendi");
+            tabloyuaktar();
+
+        }
     }
 }
