@@ -78,5 +78,16 @@ namespace Kullanıcı_Girişli_SQL_Tabanlı_Crud
 
            }
                    
-    }
+         private void button2_Click(object sender, EventArgs e)
+             {
+                 bağ.Open();
+                 SqlCommand cos = new SqlCommand("DELETE FROM [GİRİŞ] WHERE Id=@p1",bağ);
+                 cos.Parameters.AddWithValue("@p1",textBox1.Text);
+                 cos.ExecuteNonQuery();
+                 bağ.Close();
+                 MessageBox.Show("Kullanıcı başarıyla silindi.", "Kullanıcı Silindi");
+                 tabloyuaktar();
+
+             }
+       }
 }
