@@ -103,5 +103,12 @@ namespace Kullanıcı_Girişli_SQL_Tabanlı_Crud
                   tabloyuaktar();
               }
        
+              private void button5_Click(object sender, EventArgs e)
+               {
+                  textBox1.Clear();
+                  textBox2.Clear();
+                  textBox3.Clear();
+              }
+       
        }
 }
