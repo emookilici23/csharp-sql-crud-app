@@ -89,5 +89,19 @@ namespace Kullanıcı_Girişli_SQL_Tabanlı_Crud
                  tabloyuaktar();
 
              }
+      
+           private void button4_Click(object sender, EventArgs e)
+              {  bağ.Open();
+                  SqlCommand coman = new SqlCommand("UPDATE [GİRİŞ] SET kad=@p1,sifre=@p2 WHERE Id=@p3",bağ);
+                  coman.Parameters.AddWithValue("@p3",textBox1.Text);
+                  coman.Parameters.AddWithValue("@p1",textBox2.Text);
+                  coman.Parameters.AddWithValue("@p2",textBox3.Text);
+            
+                  coman.ExecuteNonQuery();
+                  bağ.Close();
+                  MessageBox.Show("Kullanıcı Başarıyla güncellendi","Kullanıcı Eklendi");
+                  tabloyuaktar();
+              }
+       
        }
 }
